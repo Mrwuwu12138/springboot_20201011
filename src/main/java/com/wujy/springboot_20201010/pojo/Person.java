@@ -21,19 +21,17 @@ public class Person {
     private Date birth;
     private Map<String, Object> maps;
     private List<Object> lists;
-    private Dog dog;
 
     public Person() {
     }
 
-    public Person(String name, Integer age, Boolean happy, Date birth, Map<String, Object> maps, List<Object> lists, Dog dog) {
+    public Person(String name, Integer age, Boolean happy, Date birth, Map<String, Object> maps, List<Object> lists) {
         this.name = name;
         this.age = age;
         this.happy = happy;
         this.birth = birth;
         this.maps = maps;
         this.lists = lists;
-        this.dog = dog;
     }
 
     public String getName() {
@@ -84,14 +82,6 @@ public class Person {
         this.lists = lists;
     }
 
-    public Dog getDog() {
-        return dog;
-    }
-
-    public void setDog(Dog dog) {
-        this.dog = dog;
-    }
-
     @Override
     public String toString() {
         return "Person{" +
@@ -101,7 +91,6 @@ public class Person {
                 ", birth=" + birth +
                 ", maps=" + maps +
                 ", lists=" + lists +
-                ", dog=" + dog +
                 '}';
     }
 }
